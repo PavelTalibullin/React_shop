@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import styles from './Category.module.scss';
-import banner20 from '../images/banner-20.jpg'
-import banner21 from '../images/banner-21.jpg'
-import banner22 from '../images/banner-22.jpg'
+import banner20 from '../../assets/images/banner20.jpg'
+import banner21 from '../../assets/images/banner21.jpg'
+import banner22 from '../../assets/images/banner22.jpg'
 
 
 const Category = () => {
@@ -14,7 +15,7 @@ const Category = () => {
 			<img src={banner20} alt="Glasses" />
 
 			<div className={styles.category__overlay}>
-			  <a href="#" className={`${styles.btn} ${styles.btn_dark}`}>Glasses</a>
+			  <Link to="#" className={`${styles.btn} ${styles.btn_dark}`}>Glasses</Link>
 			</div>
 		 </div>
 
@@ -22,7 +23,7 @@ const Category = () => {
 			<img src={banner21} alt="Sneakers" />
 
 			<div className={styles.category__overlay}>
-			  <a href="#" className={`${styles.btn} ${styles.btn_dark}`}>Sneakers</a>
+			  <Link to="#" className={`${styles.btn} ${styles.btn_dark}`}>Sneakers</Link>
 			</div>
 		 </div>
 
@@ -30,7 +31,7 @@ const Category = () => {
 			<img src={banner22} alt="Handbags" />
 
 			<div className={styles.category__overlay}>
-			  <a href="#" className={`${styles.btn} ${styles.btn_dark}`}>Handbags</a>
+			  <Link to="#" className={`${styles.btn} ${styles.btn_dark}`}>Handbags</Link>
 			</div>
 		 </div>
 	  </div>

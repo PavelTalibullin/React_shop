@@ -1,15 +1,16 @@
-import NavBar from "./NavBar";
+import { Link } from 'react-router-dom'
+import NavBar from '../NavBar/NavBar';
 import styles from "../Header/Header.module.scss";
-import logoHeader from "../images/logo-black.png";
+import logoHeader from "../../assets/images/logo_black.png";
 
 const Header = () => {
   return (
     <header className={styles.Header}>
       <div className={styles.Container}>
         <div className={styles.Header__wrapper}>
-          <a href="/">
+          <Link to="/">
             <img src={logoHeader} alt="Logotype" />
-          </a>
+          </Link>
           <NavBar />
         </div>
       </div>

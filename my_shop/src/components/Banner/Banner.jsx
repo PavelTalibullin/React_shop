@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import styles from "./Banner.module.scss";
-import banner from "../images/image-home-07.jpg";
+import banner from "../../assets/images/image_home07.jpg";
+
 
 const Banner = () => {
   return (
@@ -10,9 +12,9 @@ const Banner = () => {
           <div className={styles.banner__overlay}>
             <div>
               <h1 className={styles.banner__title}>Waffle Hooded Coat</h1>
-              <a href="/" className={`${styles.btn} ${styles.btn_dark}`}>
+              <Link to="/" className={`${styles.btn} ${styles.btn_dark}`}>
                 Shop Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
